@@ -1,17 +1,12 @@
-Amazon Sales Data Analysis using SQL
 
-🔍 What I Did:
+Amazon Sales Data Analysis Project
+Overview
+This project leverages SQL to analyze Amazon sales data, addressing 22 advanced business problems to derive actionable insights into sales performance, customer behavior, inventory management, and operational efficiency. The analysis uses a relational database to answer complex business questions, such as identifying top-selling products, calculating customer lifetime value, and detecting shipping delays.
 
-Analyzed top-selling products, revenue by category, and customer lifetime value.
-Identified shipping delays, low inventory alerts, and cross-sell opportunities.
-Built a stored procedure to automatically update inventory on sales.
-Calculated metrics like payment success rates and product return rates.
-💡 Key Insights:
-
-Pinpointed high-performing categories and underperforming sellers.
-Uncovered trends in monthly sales and customer purchasing patterns.
-Provided data-driven recommendations to optimize sales strategies.
-
+Objectives
+Analyze sales trends, product performance, and customer purchasing patterns.
+Identify operational inefficiencies, such as low stock levels or shipping delays.
+Provide data-driven recommendations for inventory, cross-selling, and seller performance optimization.
 Dataset
 The dataset includes Amazon sales data with the following key tables and attributes:
 
@@ -21,7 +16,28 @@ Inventory: Product ID, stock quantity, last restock date, warehouse details.
 Payments: Order ID, payment status (success, failed, pending).
 Returns: Order ID, product ID, return details.
 Sellers: Seller ID, sales records, order status. (Note: Adjust table/column names based on your actual dataset schema.)
-
+Tools and Technologies
+SQL: Core tool for querying, transforming, and analyzing data.
+Database: [Specify database, e.g., MySQL, PostgreSQL, SQLite].
+Other Tools: [Optional, e.g., Python for preprocessing, Tableau for visualizations].
+Project Structure
+data/: Raw and processed dataset files (if included).
+sql_queries/: SQL scripts for the 22 business problems and stored procedures.
+results/: Output reports, summaries, or visualizations from the analysis.
+schema.sql: Database schema setup (if applicable).
+README.md: Project overview and instructions.
+Setup Instructions
+Clone the Repository:
+bash
+git clone https://github.com/your-username/amazon-sales-analysis.git
+Set Up the Database:
+Import the dataset into your SQL database (e.g., MySQL, PostgreSQL).
+Run schema.sql to create the necessary tables and relationships.
+Execute SQL Queries:
+Navigate to the sql_queries/ folder.
+Run the SQL scripts in your database management tool (e.g., MySQL Workbench, pgAdmin).
+Review Results:
+Check the results/ folder for query outputs or generated reports.
 Analysis Scope
 This project addresses 22 advanced business problems, each implemented as an SQL query to extract meaningful insights. Below is a summary of the key analyses:
 
@@ -46,3 +62,4 @@ Top Customers by State: Identifies top 5 customers per state by order count and 
 Revenue by Shipping Provider: Analyzes revenue, order count, and delivery times by provider.
 Decreasing Revenue Products: Lists top 10 products with the highest revenue decline (2022 vs. 2023).
 Stored Procedure: Automatically updates inventory stock when sales are recorded.
+Key Insights
